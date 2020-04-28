@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.9">
+	<Item id="934b00e9-f282-4b33-8613-f791576b5f44">
+		<Name>Ингредиенты</Name>
+		<Code>000000001</Code>
+		<Description>Ингредиенты</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+	<Item id="2e65da0c-018f-459e-94d7-7c387f2ed9b4">
+		<Name>РасходныеМатериалы</Name>
+		<Code>000000002</Code>
+		<Description>Расходные материалы</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+</PredefinedData>
