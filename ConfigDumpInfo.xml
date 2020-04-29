@@ -75,8 +75,8 @@
 		<Metadata name="Language.Русский" id="d284d46f-a70c-4560-88e0-0d2252eddfa2" configVersion="07a9102d3de0f94ab366700a5698d2a000000000"/>
 		<Metadata name="Report.ОтчетПоОстаткам" id="a3b5f20c-a8c7-46bd-b1c0-ae9be0f38df9" configVersion="e4d336820d5d8f4a97d152f5be74fab600000000"/>
 		<Metadata name="Report.ОтчетПоОстаткам.ObjectModule" id="a3b5f20c-a8c7-46bd-b1c0-ae9be0f38df9.0" configVersion="6b1ee275d7c67042a8e1e6a193888af900000000"/>
-		<Metadata name="Report.ОтчетПоОстаткам.Template.ОсновнаяСхемаКомпоновкиДанных" id="ce7a8fee-4913-4e9f-bb33-e529d91e07e1" configVersion="386d5a392b4a3b4094f4db0532d93f5200000000"/>
-		<Metadata name="Report.ОтчетПоОстаткам.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="ce7a8fee-4913-4e9f-bb33-e529d91e07e1.0" configVersion="389af211b538d74494c9ce27e04053a400000000"/>
+		<Metadata name="Report.ОтчетПоОстаткам.Template.ОсновнаяСхемаКомпоновкиДанных" id="ce7a8fee-4913-4e9f-bb33-e529d91e07e1" configVersion="3814844ca0a64a4ca49dd035c3b66ef700000000"/>
+		<Metadata name="Report.ОтчетПоОстаткам.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="ce7a8fee-4913-4e9f-bb33-e529d91e07e1.0" configVersion="37e45ebd4fb7d341a63689005daf82fe00000000"/>
 		<Metadata name="Subsystem.НоменклатураИСклад" id="ce09a888-1cb2-4fad-94e8-e9b777e520e8" configVersion="432e2efc56e1e44f845b7811fa5b3a0f00000000"/>
 		<Metadata name="Subsystem.НоменклатураИСклад.CommandInterface" id="ce09a888-1cb2-4fad-94e8-e9b777e520e8.1" configVersion="0248cb0dfed1e040bf6a6ac30c9d61f100000000"/>
 		<Metadata name="Subsystem.Персонал" id="7c697182-469a-487d-b503-b4c468948cc1" configVersion="95a370b70b0f1143b4523f61aec54cd000000000"/>
