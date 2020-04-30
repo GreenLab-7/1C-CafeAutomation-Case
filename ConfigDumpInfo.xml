@@ -24,12 +24,8 @@
 			<Metadata name="Catalog.Сотрудники.Attribute.ДатаРождения" id="6ced4c1d-bbb2-49cb-89db-d61965bb2ea6"/>
 		</Metadata>
 		<Metadata name="Catalog.Сотрудники.ObjectModule" id="60900993-b835-42df-898a-fafaa0e11688.0" configVersion="947bd7e5950aac4da7d09ef7a040db9c00000000"/>
-		<Metadata name="Catalog.Товары" id="ade8135b-edd7-4c3a-bc2d-8cc059816004" configVersion="016ba5478cfefe4b8ca29bd2afc7529200000000">
-			<Metadata name="Catalog.Товары.TabularSection.Номер.Attribute.Компонент" id="4cd074da-58fb-4770-bd02-68addfe3e068"/>
-			<Metadata name="Catalog.Товары.TabularSection.Номер.Attribute.ЕдиницыИзмерения" id="57852a23-8487-43d3-9134-3d0659fa9ce6"/>
-			<Metadata name="Catalog.Товары.TabularSection.Номер" id="7ebc437e-81e2-4706-ae66-3192e8bd38a6"/>
+		<Metadata name="Catalog.Товары" id="ade8135b-edd7-4c3a-bc2d-8cc059816004" configVersion="c48a4f6ada8e044798de5122f51bc32600000000">
 			<Metadata name="Catalog.Товары.Attribute.Цена" id="b3805899-fb97-4f46-bdae-c17bac89a79e"/>
-			<Metadata name="Catalog.Товары.TabularSection.Номер.Attribute.Количество" id="c6e0813a-da55-4a46-8fbe-60bc5a0b0df8"/>
 		</Metadata>
 		<Metadata name="CommonPicture.ОбщаяКартинка1" id="3c22c229-99d4-4017-abc4-eefb7894c0ae" configVersion="4bae2a677418694889a00f53940d536a00000000"/>
 		<Metadata name="CommonPicture.ОбщаяКартинка1.Picture" id="3c22c229-99d4-4017-abc4-eefb7894c0ae.0" configVersion="ee8dc02d3c9e2e42935575ed2c652ef600000000"/>
