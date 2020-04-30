@@ -199,6 +199,7 @@
 			<Document>РасходнаяНакладная</Document>
 			<Document>ПриемНаРаботу</Document>
 			<Report>ОтчетПоОстаткам</Report>
+			<InformationRegister>СведенияОРецептуре</InformationRegister>
 			<AccumulationRegister>ОстаткиНоменклатур</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
