@@ -194,10 +194,10 @@
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Должности</Catalog>
 			<Catalog>ЕдиницыИзмерения</Catalog>
+			<Catalog>Договоры</Catalog>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>РасходнаяНакладная</Document>
 			<Document>ПриемНаРаботу</Document>
-			<Document>Договор</Document>
 			<Report>ОтчетПоОстаткам</Report>
 			<AccumulationRegister>ОстаткиНоменклатур</AccumulationRegister>
 		</ChildObjects>

@@ -21,7 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЕдиницыИзмерения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Товары</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.Договор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">a472ff27-1969-4397-a638-47ac318256cc</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиНоменклатур</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоОстаткам</xr:Item>
 			</Content>
