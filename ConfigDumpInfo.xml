@@ -38,6 +38,7 @@
 		<Metadata name="CommonPicture.ОбщаяКартинка5" id="12a91481-83c2-4c36-af2e-de3e41dfb035" configVersion="8a6a3ab80b2fb74ea6fb0865e01ad93500000000"/>
 		<Metadata name="CommonPicture.ОбщаяКартинка5.Picture" id="12a91481-83c2-4c36-af2e-de3e41dfb035.0" configVersion="75228e2238911145ac6fc985a0e799e100000000"/>
 		<Metadata name="Configuration.Конфигурация" id="f45e7b6b-619c-4dc9-9364-560a07c606b3" configVersion="8ef6cccde5666d468f77a8e8607fcf6d00000000"/>
+		<Metadata name="Configuration.Конфигурация.CommandInterface" id="3b284f29-42d0-42e8-a2fc-befcd909c634.a" configVersion="1b5f0eb7400c024f9f1e7cf2638bfa3200000000"/>
 		<Metadata name="Constant.НазваниеОрганизации" id="675f4395-862e-4080-9c41-bcd5521e3045" configVersion="457ce0057b87854ea45fbedf683f0c7300000000"/>
 		<Metadata name="DataProcessor.КонсольЗапросов" id="e5e9b061-de4b-4463-ae7f-0e354b402ea5" configVersion="9858675558e4a349b4ec078ad43a126b00000000">
 			<Metadata name="DataProcessor.КонсольЗапросов.TabularSection.Запросы.Attribute.ВремяВыполнения" id="06636e33-bd97-4f64-9d26-d93663b5cb52"/>
