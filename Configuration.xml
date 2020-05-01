@@ -179,11 +179,11 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>Персонал</Subsystem>
 			<Subsystem>НоменклатураИСклад</Subsystem>
 			<Subsystem>ПокупкиИПродажи</Subsystem>
 			<Subsystem>СведенияОбОрганизации</Subsystem>
-			<Subsystem>Администрирование</Subsystem>
 			<CommonPicture>ОбщаяКартинка1</CommonPicture>
 			<CommonPicture>ОбщаяКартинка2</CommonPicture>
 			<CommonPicture>ОбщаяКартинка3</CommonPicture>
@@ -196,6 +196,7 @@
 			<Catalog>Должности</Catalog>
 			<Catalog>ЕдиницыИзмерения</Catalog>
 			<Catalog>Договоры</Catalog>
+			<Catalog>ВидыЕдиницИзмерения</Catalog>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>РасходнаяНакладная</Document>
 			<Document>ПриемНаРаботу</Document>
