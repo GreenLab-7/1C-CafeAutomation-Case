@@ -203,6 +203,7 @@
 			<Report>ОтчетПоОстаткам</Report>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
 			<InformationRegister>СведенияОРецептуре</InformationRegister>
+			<InformationRegister>МножителиЕдиницИзмерения</InformationRegister>
 			<AccumulationRegister>ОстаткиНоменклатур</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
