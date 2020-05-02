@@ -7,7 +7,6 @@
 	<ChildItems>
 		<UsualGroup name="Группа1" id="38">
 			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
 			<ChildItems>
 				<InputField name="Номер" id="1">
@@ -24,8 +23,18 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="Контрагент" id="43">
+			<DataPath>1/0:4cd2ae82-7e1d-41b6-9302-c61b89e59c0e</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Договор" id="40">
+			<DataPath>1/0:3437ad13-7bfe-411f-93e1-ed122e634e97</DataPath>
+			<ContextMenu name="ДоговорКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="42"/>
+		</InputField>
 		<InputField name="Сумма" id="7">
-			<DataPath>1/0:e5be2c20-c7c4-4bf7-aea4-8e8b5eff3428/101000000:b9597d02-8efd-4135-bc44-466dabac1baf</DataPath>
+			<DataPath>Объект.Товары.TotalСумма</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
 			<ContextMenu name="СуммаКонтекстноеМеню" id="8"/>
@@ -84,6 +93,15 @@
 						<Event name="OnChange">ТоварыТоварыПриИзменении</Event>
 					</Events>
 				</InputField>
+				<InputField name="ТоварыЦена" id="29">
+					<DataPath>Объект.Товары.Цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТоварыЦенаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТоварыЦенаРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">ТоварыЦенаПриИзменении</Event>
+					</Events>
+				</InputField>
 				<InputField name="ТоварыКоличество" id="32">
 					<DataPath>Объект.Товары.Количество</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -94,7 +112,7 @@
 					</Events>
 				</InputField>
 				<InputField name="ТоварыСумма" id="35">
-					<DataPath>1/0:e5be2c20-c7c4-4bf7-aea4-8e8b5eff3428/0:b9597d02-8efd-4135-bc44-466dabac1baf</DataPath>
+					<DataPath>Объект.Товары.Сумма</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ТоварыСуммаРасширеннаяПодсказка" id="37"/>
@@ -105,7 +123,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DocumentObject.РасходнаяНакладная</v8:Type>
+				<v8:Type>cfg:DocumentObject.ЗаказКлиента</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
