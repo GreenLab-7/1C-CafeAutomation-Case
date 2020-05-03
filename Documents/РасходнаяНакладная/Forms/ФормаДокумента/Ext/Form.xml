@@ -3,7 +3,22 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПривестиПродажиКУчету" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПривестиПродажиКУчету</CommandName>
+				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Привести продажи к учету</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаПривестиПродажиКУчетуРасширеннаяПодсказка" id="41"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="38">
 			<Representation>None</Representation>
@@ -114,4 +129,21 @@
 			</UseAlways>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ПривестиПродажиКУчету" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Привести продажи к учету</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Привести продажи к учету</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПривестиПродажиКУчету</Action>
+		</Command>
+	</Commands>
 </Form>
