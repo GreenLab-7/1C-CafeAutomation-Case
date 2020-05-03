@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Document uuid="6228c078-7a8a-4649-8444-a97361611fc9">
+	<Document uuid="264d483f-832f-4276-a843-b3d2d0afe324">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.ЗаказКлиента" category="Object">
-				<xr:TypeId>d136e14c-32c4-4f22-af94-8d6bd9b41216</xr:TypeId>
-				<xr:ValueId>76f157f8-406d-4aa4-bfd2-6356aea4fc5e</xr:ValueId>
+			<xr:GeneratedType name="DocumentObject.РеализацияАссортимента" category="Object">
+				<xr:TypeId>85a74b40-a9c6-4fb2-91d6-b7f903a37669</xr:TypeId>
+				<xr:ValueId>23f99b38-6823-4fb7-a984-570c453b32c3</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.ЗаказКлиента" category="Ref">
-				<xr:TypeId>0fa71e66-b4ed-4894-9a48-c82693001967</xr:TypeId>
-				<xr:ValueId>f4dfe2ad-d58f-41be-9fe8-e15dad39e652</xr:ValueId>
+			<xr:GeneratedType name="DocumentRef.РеализацияАссортимента" category="Ref">
+				<xr:TypeId>a5561a42-2cd0-478f-8b45-ac8b5b87a72e</xr:TypeId>
+				<xr:ValueId>8aebf85b-ebd2-4799-9da2-10f756cb516d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.ЗаказКлиента" category="Selection">
-				<xr:TypeId>a6f7ee2f-6139-4d5c-be6f-aa418c102a01</xr:TypeId>
-				<xr:ValueId>0bfa7388-3db6-412e-beee-15500c8e6357</xr:ValueId>
+			<xr:GeneratedType name="DocumentSelection.РеализацияАссортимента" category="Selection">
+				<xr:TypeId>f8e7b81b-4009-4065-a7ae-75e50d9804e2</xr:TypeId>
+				<xr:ValueId>ca27cb0b-2324-4e63-b9a1-06bef7454c85</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.ЗаказКлиента" category="List">
-				<xr:TypeId>d7db6233-9624-4e84-9e6a-359b2da3de86</xr:TypeId>
-				<xr:ValueId>794906ca-d874-4609-bb3f-23d95a2b0491</xr:ValueId>
+			<xr:GeneratedType name="DocumentList.РеализацияАссортимента" category="List">
+				<xr:TypeId>97f49531-65b4-4b84-9a96-082986711545</xr:TypeId>
+				<xr:ValueId>a3bd2e6a-8009-44c0-99ec-d1bc006a2fed</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.ЗаказКлиента" category="Manager">
-				<xr:TypeId>6bca9dd1-8213-4fbb-a999-7cbd92b9a8c2</xr:TypeId>
-				<xr:ValueId>c96f5af7-fa4a-4c90-a4f9-9a86a210feee</xr:ValueId>
+			<xr:GeneratedType name="DocumentManager.РеализацияАссортимента" category="Manager">
+				<xr:TypeId>c21dd77b-5b8f-4c29-97a5-1a00add4e2b2</xr:TypeId>
+				<xr:ValueId>bbc6f67a-f21e-45b0-ae5c-01e75c5146d6</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ЗаказКлиента</Name>
+			<Name>РеализацияАссортимента</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заказ клиента</v8:content>
+					<v8:content>Реализация ассортимента</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,13 +43,13 @@
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.ЗаказКлиента.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.РеализацияАссортимента.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Document.ЗаказКлиента.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultObjectForm>Document.РеализацияАссортимента.Form.ФормаДокумента</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -61,7 +61,7 @@
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НеучтенныеПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиНоменклатур</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
@@ -80,68 +80,24 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="67bd0c6d-513d-46c4-ac0d-96df1aa49466">
-				<Properties>
-					<Name>Сумма</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сумма</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>15</v8:Digits>
-							<v8:FractionDigits>2</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
 			<Form>ФормаДокумента</Form>
-			<TabularSection uuid="1555a616-1f41-4622-ae63-227d57513a58">
+			<TabularSection uuid="0eb2398f-2d7f-4750-beb9-bc4e70b4780e">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.ЗаказКлиента.Товары" category="TabularSection">
-						<xr:TypeId>797ad857-2a73-4d3f-9189-39fc01dce5e8</xr:TypeId>
-						<xr:ValueId>18705c20-88cf-4b01-9788-e8c2623745c9</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSection.РеализацияАссортимента.ИзготавливаемыеТовары" category="TabularSection">
+						<xr:TypeId>65447691-abfd-4888-b412-15d0d4fbefe6</xr:TypeId>
+						<xr:ValueId>32a38b40-3e8a-40a0-be65-5558a3624bd7</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.ЗаказКлиента.Товары" category="TabularSectionRow">
-						<xr:TypeId>78091b37-3264-4686-aca8-0aeac23d6397</xr:TypeId>
-						<xr:ValueId>cb9a1e9b-3e27-450c-998c-2695f4c37123</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSectionRow.РеализацияАссортимента.ИзготавливаемыеТовары" category="TabularSectionRow">
+						<xr:TypeId>1920e572-9962-4df7-b123-8ce676967397</xr:TypeId>
+						<xr:ValueId>a8acc0cc-46a3-4c76-b9bf-350e05618ec0</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>Товары</Name>
+					<Name>ИзготавливаемыеТовары</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Товары</v8:content>
+							<v8:content>Изготавливаемые товары</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -149,13 +105,13 @@
 					<FillChecking>DontCheck</FillChecking>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="a65b07ce-59ab-41f0-9359-21995e7aa9bb">
+					<Attribute uuid="c1b883a3-ac5b-4aff-9a07-9275217d1be8">
 						<Properties>
-							<Name>Товары</Name>
+							<Name>Товар</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Товары</v8:content>
+									<v8:content>Товар</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -186,55 +142,13 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="d0eb1e63-1df0-416f-b983-187f278fe58b">
+					<Attribute uuid="90921576-321c-4e82-957d-efefca93a3c5">
 						<Properties>
-							<Name>Цена</Name>
+							<Name>ИзготавливаемоеКоличество</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Цена</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:decimal</v8:Type>
-								<v8:NumberQualifiers>
-									<v8:Digits>10</v8:Digits>
-									<v8:FractionDigits>0</v8:FractionDigits>
-									<v8:AllowedSign>Any</v8:AllowedSign>
-								</v8:NumberQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-							<Indexing>DontIndex</Indexing>
-							<FullTextSearch>Use</FullTextSearch>
-							<DataHistory>Use</DataHistory>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="6c6c90dd-2c4b-4935-8aeb-dd5bab12d692">
-						<Properties>
-							<Name>Количество</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Количество</v8:content>
+									<v8:content>Изготавливаемое количество</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -270,21 +184,84 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="74c7f92a-4436-4e52-a4c7-8bb96d4e4424">
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="e58ce78a-f253-4cc9-b70b-967b981d397a">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.РеализацияАссортимента.Остатки" category="TabularSection">
+						<xr:TypeId>2ee8b2a1-113b-4bb1-93c4-8cdbee998d31</xr:TypeId>
+						<xr:ValueId>5718a8ee-a74e-43d8-8657-fc5a532fa5e4</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.РеализацияАссортимента.Остатки" category="TabularSectionRow">
+						<xr:TypeId>94da281d-de03-4892-96f9-23fc9c76f1de</xr:TypeId>
+						<xr:ValueId>d42959bf-4b8a-4e15-b787-7a6cdb56114f</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Остатки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остатки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="b79e8a92-eea0-47e7-a808-8582869b6cd4">
 						<Properties>
-							<Name>Сумма</Name>
+							<Name>Ингредиент</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Сумма</v8:content>
+									<v8:content>Ингредиент</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="0d10e866-7d23-4df5-af87-f2481626fa9a">
+						<Properties>
+							<Name>Количество</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
 								<v8:Type>xs:decimal</v8:Type>
 								<v8:NumberQualifiers>
-									<v8:Digits>14</v8:Digits>
-									<v8:FractionDigits>2</v8:FractionDigits>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
 									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 								</v8:NumberQualifiers>
 							</Type>

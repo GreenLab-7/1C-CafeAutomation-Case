@@ -204,6 +204,7 @@
 			<Document>ПриемНаРаботу</Document>
 			<Document>РасходнаяНакладная</Document>
 			<Document>ПриходнаяНакладная</Document>
+			<Document>РеализацияАссортимента</Document>
 			<Report>ОтчетПоОстаткам</Report>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
 			<InformationRegister>СведенияОРецептуре</InformationRegister>
