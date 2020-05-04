@@ -151,6 +151,7 @@
 					<ExtendedTooltip name="ОстаткиСтраницаРасширеннаяПодсказка" id="43"/>
 					<ChildItems>
 						<Table name="Остатки" id="44">
+							<ReadOnly>true</ReadOnly>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
