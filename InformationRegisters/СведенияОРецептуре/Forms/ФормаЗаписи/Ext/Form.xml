@@ -4,6 +4,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<InputField name="Товар" id="1">
@@ -73,6 +74,15 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.ВидыЕдиницИзмерения</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="МножителиЕдиницИзмерении" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Множители единиц измерении</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 	</Attributes>
 </Form>
