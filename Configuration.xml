@@ -189,6 +189,8 @@
 			<CommonPicture>ОбщаяКартинка3</CommonPicture>
 			<CommonPicture>ОбщаяКартинка4</CommonPicture>
 			<CommonPicture>ОбщаяКартинка5</CommonPicture>
+			<SessionParameter>СтандартныеЕдиницыИзмерения</SessionParameter>
+			<SessionParameter>МножителиЕдиницИзмерения</SessionParameter>
 			<CommonModule>МодульКонвертированияЕдиницИзмерения</CommonModule>
 			<Constant>НазваниеОрганизации</Constant>
 			<Catalog>Товары</Catalog>
