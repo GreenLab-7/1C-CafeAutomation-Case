@@ -41,7 +41,9 @@
 			<CheckUnique>true</CheckUnique>
 			<Autonumbering>true</Autonumbering>
 			<Characteristics/>
-			<BasedOn/>
+			<BasedOn>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФизЛица</xr:Item>
+			</BasedOn>
 			<InputByString>
 				<xr:Field>Document.ПриемНаРаботу.StandardAttribute.Number</xr:Field>
 			</InputByString>
@@ -80,18 +82,18 @@
 		<ChildObjects>
 			<Attribute uuid="96204f8f-f557-44f3-a09c-5fe99e6b4150">
 				<Properties>
-					<Name>Сотрудник</Name>
+					<Name>ФИО</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сотрудник</v8:content>
+							<v8:content>ФИО</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>30</v8:Length>
+							<v8:Length>50</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>

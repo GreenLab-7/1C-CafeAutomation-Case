@@ -21,6 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сотрудники</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Должности</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриемНаРаботу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ФизЛица</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

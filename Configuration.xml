@@ -203,6 +203,7 @@
 			<Catalog>Договоры</Catalog>
 			<Catalog>ВидыЕдиницИзмерения</Catalog>
 			<Catalog>РасчетныеСчета</Catalog>
+			<Catalog>ФизЛица</Catalog>
 			<Document>ЗаказПоставщика</Document>
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриемНаРаботу</Document>
