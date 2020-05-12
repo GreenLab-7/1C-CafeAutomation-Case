@@ -38,6 +38,11 @@
 			<ContextMenu name="ДоговорКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="9"/>
 		</InputField>
+		<InputField name="РасчётныйСчет" id="55">
+			<DataPath>Объект.РасчётныйСчет</DataPath>
+			<ContextMenu name="РасчётныйСчетКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="РасчётныйСчетРасширеннаяПодсказка" id="57"/>
+		</InputField>
 		<InputField name="Сумма" id="10">
 			<DataPath>Объект.Товары.TotalСумма</DataPath>
 			<ReadOnly>true</ReadOnly>
@@ -137,6 +142,7 @@
 				</InputField>
 				<InputField name="ТоварыСумма" id="38">
 					<DataPath>Объект.Товары.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="ТоварыСуммаРасширеннаяПодсказка" id="40"/>

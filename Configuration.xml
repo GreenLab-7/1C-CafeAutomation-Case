@@ -184,6 +184,7 @@
 			<Subsystem>НоменклатураИСклад</Subsystem>
 			<Subsystem>ПокупкиИПродажи</Subsystem>
 			<Subsystem>СведенияОбОрганизации</Subsystem>
+			<Subsystem>ФинансоваяОтчетность</Subsystem>
 			<CommonPicture>ОбщаяКартинка1</CommonPicture>
 			<CommonPicture>ОбщаяКартинка2</CommonPicture>
 			<CommonPicture>ОбщаяКартинка3</CommonPicture>
@@ -201,6 +202,7 @@
 			<Catalog>ЕдиницыИзмерения</Catalog>
 			<Catalog>Договоры</Catalog>
 			<Catalog>ВидыЕдиницИзмерения</Catalog>
+			<Catalog>РасчетныеСчета</Catalog>
 			<Document>ЗаказПоставщика</Document>
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриемНаРаботу</Document>
@@ -213,6 +215,7 @@
 			<InformationRegister>МножителиЕдиницИзмерения</InformationRegister>
 			<AccumulationRegister>ОстаткиНоменклатур</AccumulationRegister>
 			<AccumulationRegister>НеучтенныеПродажи</AccumulationRegister>
+			<AccumulationRegister>ДвижениеПоРасчетнымСчетам</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

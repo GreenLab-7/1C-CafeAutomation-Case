@@ -26,15 +26,10 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Контрагент" id="43">
-			<DataPath>1/0:4cd2ae82-7e1d-41b6-9302-c61b89e59c0e</DataPath>
-			<ContextMenu name="КонтрагентКонтекстноеМеню" id="44"/>
-			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="45"/>
-		</InputField>
-		<InputField name="Договор" id="40">
-			<DataPath>1/0:3437ad13-7bfe-411f-93e1-ed122e634e97</DataPath>
-			<ContextMenu name="ДоговорКонтекстноеМеню" id="41"/>
-			<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="42"/>
+		<InputField name="РасчётныйСчёт" id="55">
+			<DataPath>Объект.РасчётныйСчёт</DataPath>
+			<ContextMenu name="РасчётныйСчётКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="РасчётныйСчётРасширеннаяПодсказка" id="57"/>
 		</InputField>
 		<InputField name="Сумма" id="7">
 			<DataPath>Объект.Товары.TotalСумма</DataPath>
@@ -132,6 +127,7 @@
 				</InputField>
 				<InputField name="ТоварыСумма" id="35">
 					<DataPath>Объект.Товары.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ТоварыСуммаРасширеннаяПодсказка" id="37"/>
