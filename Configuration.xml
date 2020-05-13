@@ -210,7 +210,8 @@
 			<Document>РасходнаяНакладная</Document>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>РеализацияАссортимента</Document>
-			<Report>ОтчетПоОстаткам</Report>
+			<Report>ОтчетПоОстаткамИОборотам</Report>
+			<Report>ОтчетПоФинансовымПоказателям</Report>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
 			<InformationRegister>СведенияОРецептуре</InformationRegister>
 			<InformationRegister>МножителиЕдиницИзмерения</InformationRegister>

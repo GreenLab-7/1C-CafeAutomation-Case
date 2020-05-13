@@ -89,6 +89,38 @@
 		Товары.Ссылка
 	) А</query>
 	</dataSet>
+	<calculatedField>
+		<dataPath>ФорматированноеНачалоПериода</dataPath>
+		<expression>Формат(&amp;НачалоПериода, "ДЛФ=ДД")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Форматированное начало периода</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ДФ=dd/MM/yy</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ФорматированныйКонецПериода</dataPath>
+		<expression>Формат(&amp;КонецПериода, "ДЛФ=ДД")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Форматированный конец периода</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<parameter>
 		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
@@ -1038,11 +1070,11 @@
 		</template>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>НачалаПериода</dcsat:name>
-			<dcsat:expression>ПараметрыДанных.НачалоПериода</dcsat:expression>
+			<dcsat:expression>ФорматированноеНачалоПериода</dcsat:expression>
 		</parameter>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>КонецПериода</dcsat:name>
-			<dcsat:expression>ПараметрыДанных.КонецПериода</dcsat:expression>
+			<dcsat:expression>ФорматированныйКонецПериода</dcsat:expression>
 		</parameter>
 	</template>
 	<template>
@@ -1466,7 +1498,7 @@
 		</template>
 		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
 			<dcsat:name>КонецПериода</dcsat:name>
-			<dcsat:expression>ПараметрыДанных.КонецПериода</dcsat:expression>
+			<dcsat:expression>ФорматированныйКонецПериода</dcsat:expression>
 		</parameter>
 	</template>
 	<template>
@@ -1649,6 +1681,12 @@
 					<dcsset:userSettingID>9ad066bb-bb9d-46d9-a1f9-acd21261fec9</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:name>Остатки</dcsset:name>
 				<dcsset:order>

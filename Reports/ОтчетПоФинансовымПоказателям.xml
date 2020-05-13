@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<Report uuid="a3b5f20c-a8c7-46bd-b1c0-ae9be0f38df9">
+	<Report uuid="f1416fc6-963b-4703-9897-27d195776f99">
 		<InternalInfo>
-			<xr:GeneratedType name="ReportObject.ОтчетПоОстаткам" category="Object">
-				<xr:TypeId>6613348b-b073-493a-be14-619c11b1f782</xr:TypeId>
-				<xr:ValueId>88e2cbff-ceb0-4c40-911c-fb4dffb88c6c</xr:ValueId>
+			<xr:GeneratedType name="ReportObject.ОтчетПоФинансовымПоказателям" category="Object">
+				<xr:TypeId>5e24b243-cd2b-47ce-b853-52c31e8dafbc</xr:TypeId>
+				<xr:ValueId>da3c4217-08e0-45ee-9f0d-2fb1b8413346</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="ReportManager.ОтчетПоОстаткам" category="Manager">
-				<xr:TypeId>91ff0e02-346b-4811-a434-49d5645f43d7</xr:TypeId>
-				<xr:ValueId>9e9e305a-78c0-466c-9f81-f91e2817b80c</xr:ValueId>
+			<xr:GeneratedType name="ReportManager.ОтчетПоФинансовымПоказателям" category="Manager">
+				<xr:TypeId>aae1507c-2ab6-42ee-b74e-a5bf98395f19</xr:TypeId>
+				<xr:ValueId>b9bd84ee-122e-4540-9357-bfa54956f0c4</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ОтчетПоОстаткам</Name>
+			<Name>ОтчетПоФинансовымПоказателям</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отчет по остаткам</v8:content>
+					<v8:content>Отчет по финансовым показателям</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm/>
 			<AuxiliaryForm/>
-			<MainDataCompositionSchema>Report.ОтчетПоОстаткам.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<MainDataCompositionSchema>Report.ОтчетПоФинансовымПоказателям.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
 			<DefaultSettingsForm/>
 			<AuxiliarySettingsForm/>
 			<DefaultVariantForm/>
