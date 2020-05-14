@@ -210,6 +210,7 @@
 			<Document>РасходнаяНакладная</Document>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>РеализацияАссортимента</Document>
+			<Document>ЧекКлиенту</Document>
 			<Report>ОтчетПоОстаткамИОборотам</Report>
 			<Report>ОтчетПоФинансовымПоказателям</Report>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
