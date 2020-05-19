@@ -190,6 +190,7 @@
 			<CommonPicture>ОбщаяКартинка3</CommonPicture>
 			<CommonPicture>ОбщаяКартинка4</CommonPicture>
 			<CommonPicture>ОбщаяКартинка5</CommonPicture>
+			<CommonPicture>ОбщаяКартинка6</CommonPicture>
 			<SessionParameter>СтандартныеЕдиницыИзмерения</SessionParameter>
 			<SessionParameter>МножителиЕдиницИзмерения</SessionParameter>
 			<CommonModule>МодульКонвертированияЕдиницИзмерения</CommonModule>
@@ -214,7 +215,6 @@
 			<Document>РасходнаяНакладная</Document>
 			<Document>ПриходнаяНакладная</Document>
 			<Document>РеализацияАссортимента</Document>
-			<Document>ЧекКлиенту</Document>
 			<Report>ОтчетПоОстаткамИОборотам</Report>
 			<Report>ОтчетПоФинансовымПоказателям</Report>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
@@ -223,7 +223,7 @@
 			<InformationRegister>ЦеныПокупкиПродажи</InformationRegister>
 			<AccumulationRegister>ОстаткиНоменклатур</AccumulationRegister>
 			<AccumulationRegister>НеучтенныеПродажи</AccumulationRegister>
-			<AccumulationRegister>Продажи</AccumulationRegister>
+			<AccumulationRegister>РасходыИПродажиНаТовары</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

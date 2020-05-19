@@ -2,37 +2,37 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<AccumulationRegister uuid="c790a3ab-4316-463a-a6df-0ec0ac1fd044">
 		<InternalInfo>
-			<xr:GeneratedType name="AccumulationRegisterRecord.Продажи" category="Record">
+			<xr:GeneratedType name="AccumulationRegisterRecord.РасходыИПродажиНаТовары" category="Record">
 				<xr:TypeId>6c21d59d-6f04-4af8-aa60-b34d500c1476</xr:TypeId>
 				<xr:ValueId>b8b427b8-d269-40f5-ad72-0d3948ab0b10</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="AccumulationRegisterManager.Продажи" category="Manager">
+			<xr:GeneratedType name="AccumulationRegisterManager.РасходыИПродажиНаТовары" category="Manager">
 				<xr:TypeId>0bb6aec8-fbf5-445d-b769-7d1f0b4d3126</xr:TypeId>
 				<xr:ValueId>b164911c-f500-4af2-a41e-50c8fc791448</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="AccumulationRegisterSelection.Продажи" category="Selection">
+			<xr:GeneratedType name="AccumulationRegisterSelection.РасходыИПродажиНаТовары" category="Selection">
 				<xr:TypeId>8091ac28-cf78-46a5-a49b-b3e5a27ea722</xr:TypeId>
 				<xr:ValueId>6459edde-ef10-430f-addc-066034420cf0</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="AccumulationRegisterList.Продажи" category="List">
+			<xr:GeneratedType name="AccumulationRegisterList.РасходыИПродажиНаТовары" category="List">
 				<xr:TypeId>56ce2abe-f96c-41bd-b37c-7037221cb41f</xr:TypeId>
 				<xr:ValueId>18c4a896-1bf6-4140-a354-89c855e8e5a9</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="AccumulationRegisterRecordSet.Продажи" category="RecordSet">
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.РасходыИПродажиНаТовары" category="RecordSet">
 				<xr:TypeId>18635983-2e7c-4408-afcc-e1d90a94619e</xr:TypeId>
 				<xr:ValueId>01be75e5-e961-4599-9059-4abf1c57fd18</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="AccumulationRegisterRecordKey.Продажи" category="RecordKey">
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.РасходыИПродажиНаТовары" category="RecordKey">
 				<xr:TypeId>2efe43d8-76ed-4a1e-96ac-d4a423836c4b</xr:TypeId>
 				<xr:ValueId>db383bbc-e75e-4614-88ac-db4b3023584a</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Продажи</Name>
+			<Name>РасходыИПродажиНаТовары</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Продажи</v8:content>
+					<v8:content>Расходы и продажи на товары</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

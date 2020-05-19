@@ -3,25 +3,9 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="ЗаполнитьИзготавливаеммыеТоварыИзНеучтенныхПродаж" id="31">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ЗаполнитьИзНеучтенныхПродаж</CommandName>
-				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Заполнить данные из неучт. продаж</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="ЗаполнитьИзготавливаеммыеТоварыИзНеучтенныхПродажРасширеннаяПодсказка" id="32"/>
-			</Button>
-		</ChildItems>
-	</AutoCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="29">
@@ -43,172 +27,105 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<Pages name="Вкладки" id="38">
+		<InputField name="Товар" id="72">
+			<DataPath>Объект.Товар</DataPath>
+			<ContextMenu name="ТоварКонтекстноеМеню" id="73"/>
+			<ExtendedTooltip name="ТоварРасширеннаяПодсказка" id="74"/>
+			<Events>
+				<Event name="OnChange">ТоварыПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Количество" id="75">
+			<DataPath>Объект.Количество</DataPath>
+			<ContextMenu name="КоличествоКонтекстноеМеню" id="76"/>
+			<ExtendedTooltip name="КоличествоРасширеннаяПодсказка" id="77"/>
+			<Events>
+				<Event name="OnChange">КоличествоПриИзменении</Event>
+			</Events>
+		</InputField>
+		<UsualGroup name="ОстаткиСтраница" id="42">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Вкладки</v8:content>
+					<v8:content>Необходимые ингредиенты</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Вкладки</v8:content>
+					<v8:content>Остатки страница</v8:content>
 				</v8:item>
 			</ToolTip>
-			<ExtendedTooltip name="ВкладкиРасширеннаяПодсказка" id="39"/>
+			<ExtendedTooltip name="ОстаткиСтраницаРасширеннаяПодсказка" id="43"/>
 			<ChildItems>
-				<Page name="ИзготовляемыеТовары" id="40">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Изготовляемые товары</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Изготовляемые товары</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>HorizontalIfPossible</Group>
-					<ExtendedTooltip name="ИзготовляемыеТоварыРасширеннаяПодсказка" id="41"/>
+				<Table name="Остатки" id="44">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Остатки</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ОстаткиКонтекстноеМеню" id="45"/>
+					<AutoCommandBar name="ОстаткиКоманднаяПанель" id="46"/>
+					<ExtendedTooltip name="ОстаткиРасширеннаяПодсказка" id="47"/>
+					<SearchStringAddition name="ОстаткиСтрокаПоиска" id="48">
+						<AdditionSource>
+							<Item>Остатки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстаткиСтрокаПоискаКонтекстноеМеню" id="49"/>
+						<ExtendedTooltip name="ОстаткиСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОстаткиСостояниеПросмотра" id="51">
+						<AdditionSource>
+							<Item>Остатки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстаткиСостояниеПросмотраКонтекстноеМеню" id="52"/>
+						<ExtendedTooltip name="ОстаткиСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОстаткиУправлениеПоиском" id="54">
+						<AdditionSource>
+							<Item>Остатки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОстаткиУправлениеПоискомКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="ОстаткиУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+					</SearchControlAddition>
 					<ChildItems>
-						<Table name="ИзготавливаемыеТовары" id="7">
-							<Representation>List</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.ИзготавливаемыеТовары</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ИзготавливаемыеТоварыКонтекстноеМеню" id="8"/>
-							<AutoCommandBar name="ИзготавливаемыеТоварыКоманднаяПанель" id="9"/>
-							<ExtendedTooltip name="ИзготавливаемыеТоварыРасширеннаяПодсказка" id="10"/>
-							<SearchStringAddition name="ИзготавливаемыеТоварыСтрокаПоиска" id="11">
-								<AdditionSource>
-									<Item>ИзготавливаемыеТовары</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ИзготавливаемыеТоварыСтрокаПоискаКонтекстноеМеню" id="12"/>
-								<ExtendedTooltip name="ИзготавливаемыеТоварыСтрокаПоискаРасширеннаяПодсказка" id="13"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ИзготавливаемыеТоварыСостояниеПросмотра" id="14">
-								<AdditionSource>
-									<Item>ИзготавливаемыеТовары</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ИзготавливаемыеТоварыСостояниеПросмотраКонтекстноеМеню" id="15"/>
-								<ExtendedTooltip name="ИзготавливаемыеТоварыСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ИзготавливаемыеТоварыУправлениеПоиском" id="17">
-								<AdditionSource>
-									<Item>ИзготавливаемыеТовары</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ИзготавливаемыеТоварыУправлениеПоискомКонтекстноеМеню" id="18"/>
-								<ExtendedTooltip name="ИзготавливаемыеТоварыУправлениеПоискомРасширеннаяПодсказка" id="19"/>
-							</SearchControlAddition>
-							<Events>
-								<Event name="OnChange">ИзготавливаемыеТоварыПриИзменении</Event>
-							</Events>
-							<ChildItems>
-								<LabelField name="ИзготавливаемыеТоварыНомерСтроки" id="20">
-									<DataPath>Объект.ИзготавливаемыеТовары.LineNumber</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ИзготавливаемыеТоварыНомерСтрокиКонтекстноеМеню" id="21"/>
-									<ExtendedTooltip name="ИзготавливаемыеТоварыНомерСтрокиРасширеннаяПодсказка" id="22"/>
-								</LabelField>
-								<InputField name="ИзготавливаемыеТоварыТовар" id="23">
-									<DataPath>Объект.ИзготавливаемыеТовары.Товар</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ИзготавливаемыеТоварыТоварКонтекстноеМеню" id="24"/>
-									<ExtendedTooltip name="ИзготавливаемыеТоварыТоварРасширеннаяПодсказка" id="25"/>
-								</InputField>
-								<InputField name="ИзготавливаемыеТоварыИзготавливаемоеКоличество" id="26">
-									<DataPath>Объект.ИзготавливаемыеТовары.ИзготавливаемоеКоличество</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ИзготавливаемыеТоварыИзготавливаемоеКоличествоКонтекстноеМеню" id="27"/>
-									<ExtendedTooltip name="ИзготавливаемыеТоварыИзготавливаемоеКоличествоРасширеннаяПодсказка" id="28"/>
-								</InputField>
-							</ChildItems>
-						</Table>
+						<LabelField name="ОстаткиНомерСтроки" id="57">
+							<DataPath>Объект.Остатки.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиНомерСтрокиКонтекстноеМеню" id="58"/>
+							<ExtendedTooltip name="ОстаткиНомерСтрокиРасширеннаяПодсказка" id="59"/>
+						</LabelField>
+						<InputField name="ОстаткиИнгредиент" id="60">
+							<DataPath>Объект.Остатки.Ингредиент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиИнгредиентКонтекстноеМеню" id="61"/>
+							<ExtendedTooltip name="ОстаткиИнгредиентРасширеннаяПодсказка" id="62"/>
+						</InputField>
+						<InputField name="ОстаткиКоличество" id="63">
+							<DataPath>Объект.Остатки.Количество</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиКоличествоКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ОстаткиКоличествоРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<InputField name="ОстаткиЕдиницаИзмерения" id="66">
+							<DataPath>Объект.Остатки.ЕдиницаИзмерения</DataPath>
+							<ContextMenu name="ОстаткиЕдиницаИзмеренияКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ОстаткиЕдиницаИзмеренияРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ОстаткиВидЕдиницыИзмерения" id="69">
+							<DataPath>Объект.Остатки.ВидЕдиницыИзмерения</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОстаткиВидЕдиницыИзмеренияКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ОстаткиВидЕдиницыИзмеренияРасширеннаяПодсказка" id="71"/>
+						</InputField>
 					</ChildItems>
-				</Page>
-				<Page name="ОстаткиСтраница" id="42">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Необходимые ингредиенты</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Остатки страница</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>HorizontalIfPossible</Group>
-					<ExtendedTooltip name="ОстаткиСтраницаРасширеннаяПодсказка" id="43"/>
-					<ChildItems>
-						<Table name="Остатки" id="44">
-							<ReadOnly>true</ReadOnly>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.Остатки</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ОстаткиКонтекстноеМеню" id="45"/>
-							<AutoCommandBar name="ОстаткиКоманднаяПанель" id="46"/>
-							<ExtendedTooltip name="ОстаткиРасширеннаяПодсказка" id="47"/>
-							<SearchStringAddition name="ОстаткиСтрокаПоиска" id="48">
-								<AdditionSource>
-									<Item>Остатки</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ОстаткиСтрокаПоискаКонтекстноеМеню" id="49"/>
-								<ExtendedTooltip name="ОстаткиСтрокаПоискаРасширеннаяПодсказка" id="50"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ОстаткиСостояниеПросмотра" id="51">
-								<AdditionSource>
-									<Item>Остатки</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ОстаткиСостояниеПросмотраКонтекстноеМеню" id="52"/>
-								<ExtendedTooltip name="ОстаткиСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ОстаткиУправлениеПоиском" id="54">
-								<AdditionSource>
-									<Item>Остатки</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ОстаткиУправлениеПоискомКонтекстноеМеню" id="55"/>
-								<ExtendedTooltip name="ОстаткиУправлениеПоискомРасширеннаяПодсказка" id="56"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<LabelField name="ОстаткиНомерСтроки" id="57">
-									<DataPath>Объект.Остатки.LineNumber</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ОстаткиНомерСтрокиКонтекстноеМеню" id="58"/>
-									<ExtendedTooltip name="ОстаткиНомерСтрокиРасширеннаяПодсказка" id="59"/>
-								</LabelField>
-								<InputField name="ОстаткиИнгредиент" id="60">
-									<DataPath>Объект.Остатки.Ингредиент</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ОстаткиИнгредиентКонтекстноеМеню" id="61"/>
-									<ExtendedTooltip name="ОстаткиИнгредиентРасширеннаяПодсказка" id="62"/>
-								</InputField>
-								<InputField name="ОстаткиКоличество" id="63">
-									<DataPath>Объект.Остатки.Количество</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ОстаткиКоличествоКонтекстноеМеню" id="64"/>
-									<ExtendedTooltip name="ОстаткиКоличествоРасширеннаяПодсказка" id="65"/>
-								</InputField>
-							</ChildItems>
-						</Table>
-					</ChildItems>
-				</Page>
+				</Table>
 			</ChildItems>
-		</Pages>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -270,24 +187,39 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
+				<Column name="ВидЕдиницыИзмерения" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид единицы измерения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыЕдиницИзмерения</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
-	</Attributes>
-	<Commands>
-		<Command name="ЗаполнитьИзНеучтенныхПродаж" id="1">
+		<Attribute name="СтандартныеЕдиницыИзмерения" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить из неучтенных продаж</v8:content>
+					<v8:content>Стандартные единицы измерения</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить из неучтенных продаж</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗаполнитьИзНеучтенныхПродаж</Action>
-		</Command>
-	</Commands>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.ОстаткиНоменклатур.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
 </Form>
