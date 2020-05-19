@@ -139,13 +139,6 @@
 					<ContextMenu name="ТоварыВидЕдиницыИзмеренияКонтекстноеМеню" id="50"/>
 					<ExtendedTooltip name="ТоварыВидЕдиницыИзмеренияРасширеннаяПодсказка" id="51"/>
 				</InputField>
-				<InputField name="ТоварыМножитель" id="52">
-					<DataPath>1/0:1555a616-1f41-4622-ae63-227d57513a58/0:1babbf0a-b1f4-4a76-95f9-8ea53fc04a4e</DataPath>
-					<Visible>false</Visible>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТоварыМножительКонтекстноеМеню" id="53"/>
-					<ExtendedTooltip name="ТоварыМножительРасширеннаяПодсказка" id="54"/>
-				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -160,24 +153,7 @@
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
 			<Columns>
-				<AdditionalColumns table="Объект.Товары">
-					<Column name="Множитель" id="1">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Множитель</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:decimal</v8:Type>
-							<v8:NumberQualifiers>
-								<v8:Digits>10</v8:Digits>
-								<v8:FractionDigits>3</v8:FractionDigits>
-								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-							</v8:NumberQualifiers>
-						</Type>
-					</Column>
-				</AdditionalColumns>
+				<AdditionalColumns table="Объект.Товары"/>
 			</Columns>
 		</Attribute>
 		<Attribute name="СтандартныеЕдиницыИзмерения" id="2">
@@ -197,6 +173,31 @@
 				</v8:item>
 			</Title>
 			<Type/>
+		</Attribute>
+		<Attribute name="ЦеныПокупкиПродажи" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цены покупки продажи</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПрошлыйМножитель" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прошлый множитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>18</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>

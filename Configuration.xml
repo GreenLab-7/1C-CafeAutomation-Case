@@ -220,6 +220,7 @@
 			<DataProcessor>КонсольЗапросов</DataProcessor>
 			<InformationRegister>СведенияОРецептуре</InformationRegister>
 			<InformationRegister>МножителиЕдиницИзмерения</InformationRegister>
+			<InformationRegister>ЦеныПокупкиПродажи</InformationRegister>
 			<AccumulationRegister>ОстаткиНоменклатур</AccumulationRegister>
 			<AccumulationRegister>НеучтенныеПродажи</AccumulationRegister>
 			<AccumulationRegister>Продажи</AccumulationRegister>
