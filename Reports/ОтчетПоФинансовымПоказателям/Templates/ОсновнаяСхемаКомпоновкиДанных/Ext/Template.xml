@@ -77,10 +77,6 @@
 		<dataPath>СуммаРасход</dataPath>
 		<expression>Сумма(СуммаРасход)</expression>
 	</totalField>
-	<totalField>
-		<dataPath>Рентабельность</dataPath>
-		<expression>Среднее(Рентабельность)</expression>
-	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
