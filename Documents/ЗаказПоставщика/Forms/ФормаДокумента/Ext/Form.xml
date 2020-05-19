@@ -39,7 +39,7 @@
 			<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="9"/>
 		</InputField>
 		<InputField name="РасчётныйСчет" id="55">
-			<DataPath>Объект.РасчётныйСчет</DataPath>
+			<DataPath>1/0:39a87090-d5a5-40d4-a7c8-51bf398d8ddd</DataPath>
 			<ContextMenu name="РасчётныйСчетКонтекстноеМеню" id="56"/>
 			<ExtendedTooltip name="РасчётныйСчетРасширеннаяПодсказка" id="57"/>
 		</InputField>

@@ -193,7 +193,12 @@
 			<SessionParameter>СтандартныеЕдиницыИзмерения</SessionParameter>
 			<SessionParameter>МножителиЕдиницИзмерения</SessionParameter>
 			<CommonModule>МодульКонвертированияЕдиницИзмерения</CommonModule>
+			<CommonCommand>КомандаФормыРасчетногоСчета</CommonCommand>
 			<Constant>НазваниеОрганизации</Constant>
+			<Constant>НомерРасчетногоСчета</Constant>
+			<Constant>КорреспондентскийСчет</Constant>
+			<Constant>БИК</Constant>
+			<CommonForm>ПараметрыРасчетногоСчета</CommonForm>
 			<Catalog>Товары</Catalog>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>Сотрудники</Catalog>
@@ -202,7 +207,6 @@
 			<Catalog>ЕдиницыИзмерения</Catalog>
 			<Catalog>Договоры</Catalog>
 			<Catalog>ВидыЕдиницИзмерения</Catalog>
-			<Catalog>РасчетныеСчета</Catalog>
 			<Catalog>ФизЛица</Catalog>
 			<Document>ЗаказПоставщика</Document>
 			<Document>ЗаказКлиента</Document>
@@ -218,7 +222,7 @@
 			<InformationRegister>МножителиЕдиницИзмерения</InformationRegister>
 			<AccumulationRegister>ОстаткиНоменклатур</AccumulationRegister>
 			<AccumulationRegister>НеучтенныеПродажи</AccumulationRegister>
-			<AccumulationRegister>ДвижениеПоРасчетнымСчетам</AccumulationRegister>
+			<AccumulationRegister>Продажи</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

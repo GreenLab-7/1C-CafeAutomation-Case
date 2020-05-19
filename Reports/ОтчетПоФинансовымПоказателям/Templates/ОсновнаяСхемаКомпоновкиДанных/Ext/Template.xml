@@ -7,14 +7,17 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаРасход</dataPath>
-			<field>СуммаРасход</field>
+			<dataPath>Товар</dataPath>
+			<field>Товар</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Себестоймость продаж</v8:content>
+					<v8:content>Наименование товара</v8:content>
 				</v8:item>
 			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>СуммаПриход</dataPath>
@@ -27,46 +30,33 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>РасчётныйСчётСсылка</dataPath>
-			<field>РасчётныйСчётСсылка</field>
+			<dataPath>СуммаРасход</dataPath>
+			<field>СуммаРасход</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Расчётный счёт</v8:content>
+					<v8:content>Себестоимость продаж</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ДвижениеПоРасчетнымСчетам.РасчётныйСчёт КАК РасчётныйСчётСсылка,
-	СУММА(ВЫБОР
-			КОГДА ДвижениеПоРасчетнымСчетам.ВидДвижения = &amp;ДвижениеПриход
-				ТОГДА ДвижениеПоРасчетнымСчетам.Сумма
-			ИНАЧЕ 0
-		КОНЕЦ) КАК СуммаПриход,
-	СУММА(ВЫБОР
-			КОГДА ДвижениеПоРасчетнымСчетам.ВидДвижения = &amp;ДвижениеРасход
-				ТОГДА ДвижениеПоРасчетнымСчетам.Сумма
-			ИНАЧЕ 0
-		КОНЕЦ) КАК СуммаРасход
+	ПродажиОстаткиИОбороты.Товар КАК Товар,
+	ПродажиОстаткиИОбороты.СуммаПриход КАК СуммаПриход,
+	ПродажиОстаткиИОбороты.СуммаРасход КАК СуммаРасход
 ИЗ
-	РегистрНакопления.ДвижениеПоРасчетнымСчетам КАК ДвижениеПоРасчетнымСчетам
-ГДЕ
-	(ТИПЗНАЧЕНИЯ(ДвижениеПоРасчетнымСчетам.Регистратор) = ТИП(Документ.ЗаказПоставщика)
-	ИЛИ ТИПЗНАЧЕНИЯ(ДвижениеПоРасчетнымСчетам.Регистратор) = ТИП(Документ.ЗаказКлиента))
-
-СГРУППИРОВАТЬ ПО
-	ДвижениеПоРасчетнымСчетам.РасчётныйСчёт</query>
+	РегистрНакопления.Продажи.ОстаткиИОбороты КАК ПродажиОстаткиИОбороты</query>
 	</dataSet>
 	<calculatedField>
 		<dataPath>Рентабельность</dataPath>
-		<expression>(((Сумма(СуммаПриход) - Сумма(СуммаРасход)) / Сумма(СуммаРасход)) * 100)</expression>
+		<expression>ВЫБОР КОГДА СуммаРасход = 0 ТОГДА Неопределено ИНАЧЕ Строка((СуммаПриход - СуммаРасход) / СуммаРасход) КОНЕЦ</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
 				<v8:content>Рентабельность</v8:content>
 			</v8:item>
 		</title>
+		<presentationExpression>ВЫБОР КОГДА СуммаРасход = 0 ТОГДА "Для данного товара продаж не было" ИНАЧЕ Строка(((СуммаПриход - СуммаРасход) / СуммаРасход) * 100) + "%" КОНЕЦ</presentationExpression>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:parameter>Формат</dcscor:parameter>
@@ -82,41 +72,11 @@
 	<totalField>
 		<dataPath>СуммаПриход</dataPath>
 		<expression>Сумма(СуммаПриход)</expression>
-		<group>ОбщийИтог</group>
 	</totalField>
 	<totalField>
 		<dataPath>СуммаРасход</dataPath>
 		<expression>Сумма(СуммаРасход)</expression>
-		<group>ОбщийИтог</group>
 	</totalField>
-	<parameter>
-		<name>ДвижениеПриход</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Движение приход</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise">d4p1:AccumulationRecordType</v8:Type>
-		</valueType>
-		<value xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d3p1:AccumulationRecordType">Receipt</value>
-		<useRestriction>true</useRestriction>
-	</parameter>
-	<parameter>
-		<name>ДвижениеРасход</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Движение расход</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise">d4p1:AccumulationRecordType</v8:Type>
-		</valueType>
-		<value xmlns:d3p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d3p1:AccumulationRecordType">Expense</value>
-		<useRestriction>true</useRestriction>
-	</parameter>
 	<parameter>
 		<name>НачалоПериода</name>
 		<title xsi:type="v8:LocalStringType">
@@ -133,7 +93,7 @@
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>true</useRestriction>
-		<expression>НачалоПериода(&amp;Период.ДатаНачала, "День")</expression>
+		<expression>&amp;Период.ДатаНачала</expression>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -151,7 +111,7 @@
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>true</useRestriction>
-		<expression>КонецПериода(&amp;Период.ДатаОкончания, "День")</expression>
+		<expression>&amp;Период.ДатаОкончания</expression>
 	</parameter>
 	<parameter>
 		<name>Период</name>
@@ -176,6 +136,9 @@
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Товар</dcsset:field>
+				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаПриход</dcsset:field>
 				</dcsset:item>
@@ -205,29 +168,12 @@
 				</dcscor:item>
 			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:groupItems>
-					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>РасчётныйСчётСсылка</dcsset:field>
-						<dcsset:groupType>Items</dcsset:groupType>
-						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-					</dcsset:item>
-				</dcsset:groupItems>
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
-				<dcsset:item xsi:type="dcsset:StructureItemGroup">
-					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-					</dcsset:order>
-					<dcsset:selection>
-						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					</dcsset:selection>
-				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>

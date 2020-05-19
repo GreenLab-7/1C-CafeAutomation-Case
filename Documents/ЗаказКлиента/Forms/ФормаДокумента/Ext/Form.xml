@@ -27,7 +27,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<InputField name="РасчётныйСчёт" id="55">
-			<DataPath>Объект.РасчётныйСчёт</DataPath>
+			<DataPath>1/0:a18be20c-2325-4126-9978-10d571c56543</DataPath>
 			<ContextMenu name="РасчётныйСчётКонтекстноеМеню" id="56"/>
 			<ExtendedTooltip name="РасчётныйСчётРасширеннаяПодсказка" id="57"/>
 		</InputField>

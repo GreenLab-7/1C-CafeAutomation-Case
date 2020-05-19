@@ -15,8 +15,8 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДвижениеПоРасчетнымСчетам</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РасчетныеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Продажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">01f27ce1-f758-4367-9445-9d24f6565fe3</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоФинансовымПоказателям</xr:Item>
 			</Content>
 		</Properties>
