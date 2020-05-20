@@ -7,6 +7,8 @@
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">false</xr:Value>
+				<xr:Value name="Role.Сотрудник">true</xr:Value>
 			</Visibility>
 		</Item>
 	</LeftColumn>
@@ -16,6 +18,7 @@
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администратор">false</xr:Value>
 			</Visibility>
 		</Item>
 	</RightColumn>

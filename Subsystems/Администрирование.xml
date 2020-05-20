@@ -21,9 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольЗапросов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыЕдиницИзмерения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МножителиЕдиницИзмерения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СеансБариста</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СеансыБарист</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">930bb6b7-5e30-483d-b0e3-e9373d0b105d</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
