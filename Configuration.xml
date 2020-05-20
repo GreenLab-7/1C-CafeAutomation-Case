@@ -220,6 +220,7 @@
 			<Document>РеализацияАссортимента</Document>
 			<Report>ОтчетПоОстаткамИОборотам</Report>
 			<Report>ОтчетПоФинансовымПоказателям</Report>
+			<Report>ОтчетОПродажах</Report>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
 			<DataProcessor>СеансБариста</DataProcessor>
 			<InformationRegister>СведенияОРецептуре</InformationRegister>
