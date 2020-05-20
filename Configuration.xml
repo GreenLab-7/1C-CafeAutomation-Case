@@ -221,11 +221,12 @@
 			<Report>ОтчетПоОстаткамИОборотам</Report>
 			<Report>ОтчетПоФинансовымПоказателям</Report>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
+			<DataProcessor>СеансБариста</DataProcessor>
 			<InformationRegister>СведенияОРецептуре</InformationRegister>
 			<InformationRegister>МножителиЕдиницИзмерения</InformationRegister>
 			<InformationRegister>ЦеныПокупкиПродажи</InformationRegister>
+			<InformationRegister>СеансыБарист</InformationRegister>
 			<AccumulationRegister>ОстаткиНоменклатур</AccumulationRegister>
-			<AccumulationRegister>НеучтенныеПродажи</AccumulationRegister>
 			<AccumulationRegister>РасходыИПродажиНаТовары</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
