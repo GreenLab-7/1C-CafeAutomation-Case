@@ -49,16 +49,16 @@
 	</dataSet>
 	<calculatedField>
 		<dataPath>Рентабельность</dataPath>
-		<expression>ВЫБОР КОГДА СуммаРасход = 0 ТОГДА Неопределено ИНАЧЕ Строка((СуммаПриход - СуммаРасход) / СуммаРасход) КОНЕЦ</expression>
+		<expression>ВЫБОР КОГДА СуммаРасход = 0 ТОГДА "Для данного товара продаж не было" ИНАЧЕ Строка(Формат(((СуммаПриход - СуммаРасход) / СуммаРасход) * 100, "ЧДЦ=0")) + "%" КОНЕЦ</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
 				<v8:content>Рентабельность</v8:content>
 			</v8:item>
 		</title>
-		<presentationExpression>ВЫБОР КОГДА СуммаРасход = 0 ТОГДА "Для данного товара продаж не было" ИНАЧЕ Строка(((СуммаПриход - СуммаРасход) / СуммаРасход) * 100) + "%" КОНЕЦ</presentationExpression>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>Формат</dcscor:parameter>
 				<dcscor:value xsi:type="v8:LocalStringType">
 					<v8:item>
