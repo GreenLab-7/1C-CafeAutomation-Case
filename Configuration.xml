@@ -193,6 +193,9 @@
 			<CommonPicture>ОбщаяКартинка6</CommonPicture>
 			<SessionParameter>СтандартныеЕдиницыИзмерения</SessionParameter>
 			<SessionParameter>МножителиЕдиницИзмерения</SessionParameter>
+			<SessionParameter>ТекущийСотрудник</SessionParameter>
+			<Role>Администратор</Role>
+			<Role>Сотрудник</Role>
 			<CommonModule>МодульКонвертированияЕдиницИзмерения</CommonModule>
 			<CommonCommand>КомандаФормыРасчетногоСчета</CommonCommand>
 			<Constant>НазваниеОрганизации</Constant>
