@@ -1,6 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ОткрытьСеанс" id="3">
+				<Type>CommandBarButton</Type>
+				<Width>20</Width>
+				<Height>1</Height>
+				<CommandName>Form.Command.ОткрытьСеанс</CommandName>
+				<BackColor>#FFDF28</BackColor>
+				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+				<ExtendedTooltip name="ОткрытьСеансРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="ЗакрытьСеанс" id="1">
+				<Type>CommandBarButton</Type>
+				<Width>20</Width>
+				<Height>1</Height>
+				<CommandName>Form.Command.ЗакрытьСеанс</CommandName>
+				<BackColor>#FFDF28</BackColor>
+				<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+				<ExtendedTooltip name="ЗакрытьСеансРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -9,26 +30,6 @@
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="6"/>
-			<ChildItems>
-				<Button name="ОткрытьСеанс" id="3">
-					<Type>UsualButton</Type>
-					<Width>20</Width>
-					<Height>2</Height>
-					<CommandName>Form.Command.ОткрытьСеанс</CommandName>
-					<BackColor>#FFDF28</BackColor>
-					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-					<ExtendedTooltip name="ОткрытьСеансРасширеннаяПодсказка" id="4"/>
-				</Button>
-				<Button name="ЗакрытьСеанс" id="1">
-					<Type>UsualButton</Type>
-					<Width>20</Width>
-					<Height>2</Height>
-					<CommandName>Form.Command.ЗакрытьСеанс</CommandName>
-					<BackColor>#FFDF28</BackColor>
-					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-					<ExtendedTooltip name="ЗакрытьСеансРасширеннаяПодсказка" id="2"/>
-				</Button>
-			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа2" id="29">
 			<Title>
@@ -47,7 +48,20 @@
 					<DataPath>Объект.ЦеныНаСегодня</DataPath>
 					<RowFilter xsi:nil="true"/>
 					<ContextMenu name="ЦеныНаСегодняКонтекстноеМеню" id="8"/>
-					<AutoCommandBar name="ЦеныНаСегодняКоманднаяПанель" id="9"/>
+					<AutoCommandBar name="ЦеныНаСегодняКоманднаяПанель" id="9">
+						<ChildItems>
+							<Button name="ОбновитьЦены" id="31">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.ОбновитьЦены</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.Refresh</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ОбновитьЦеныРасширеннаяПодсказка" id="32"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
 					<ExtendedTooltip name="ЦеныНаСегодняРасширеннаяПодсказка" id="10"/>
 					<SearchStringAddition name="ЦеныНаСегодняСтрокаПоиска" id="11">
 						<AdditionSource>
@@ -149,6 +163,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗакрытьСеанс</Action>
+		</Command>
+		<Command name="ОбновитьЦены" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить цены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить цены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьЦены</Action>
 		</Command>
 	</Commands>
 </Form>
