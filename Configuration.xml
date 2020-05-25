@@ -202,6 +202,7 @@
 			<Constant>НомерРасчетногоСчета</Constant>
 			<Constant>КорреспондентскийСчет</Constant>
 			<Constant>БИК</Constant>
+			<Constant>СтавкаБаристы</Constant>
 			<CommonForm>ПараметрыРасчетногоСчета</CommonForm>
 			<Catalog>Товары</Catalog>
 			<Catalog>Номенклатура</Catalog>
@@ -222,7 +223,6 @@
 			<Report>ОтчетПоФинансовымПоказателям</Report>
 			<Report>ОтчетОПродажах</Report>
 			<Report>ОтчетПоЗарплатеБаристам</Report>
-			<Report>Отчет1</Report>
 			<DataProcessor>КонсольЗапросов</DataProcessor>
 			<DataProcessor>СеансБариста</DataProcessor>
 			<InformationRegister>СведенияОРецептуре</InformationRegister>

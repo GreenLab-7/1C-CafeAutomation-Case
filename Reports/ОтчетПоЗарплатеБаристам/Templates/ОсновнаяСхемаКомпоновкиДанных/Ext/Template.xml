@@ -43,7 +43,7 @@
 	ВЫБРАТЬ
 		Сеансы.Период КАК День,
 		Сеансы.Сотрудник,
-		РАЗНОСТЬДАТ(Сеансы.ДатаНачала, Сеансы.ДатаОкончания, ЧАС) * 107 КАК Зарплата 
+		РАЗНОСТЬДАТ(Сеансы.ДатаНачала, Сеансы.ДатаОкончания, ЧАС) * &amp;СтавкаБаристы КАК Зарплата 
 	ИЗ
 		РегистрСведений.СеансыБарист КАК Сеансы	
 
@@ -132,6 +132,26 @@
 		</value>
 		<useRestriction>false</useRestriction>
 		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>СтавкаБаристы</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Ставка баристы</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>10</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<expression>Константы.СтавкаБаристы.Получить()</expression>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
