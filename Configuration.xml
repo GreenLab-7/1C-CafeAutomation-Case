@@ -194,6 +194,7 @@
 			<SessionParameter>СтандартныеЕдиницыИзмерения</SessionParameter>
 			<SessionParameter>МножителиЕдиницИзмерения</SessionParameter>
 			<SessionParameter>ТекущийСотрудник</SessionParameter>
+			<SessionParameter>ИдетСеанс</SessionParameter>
 			<Role>Администратор</Role>
 			<Role>Сотрудник</Role>
 			<CommonModule>МодульКонвертированияЕдиницИзмерения</CommonModule>
