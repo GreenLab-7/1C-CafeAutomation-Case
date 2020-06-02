@@ -68,7 +68,7 @@
 							<ExtendedTooltip name="РаботающийРасширеннаяПодсказка" id="15"/>
 						</CheckBoxField>
 						<InputField name="Оклад" id="16">
-							<DataPath>Объект.Оклад</DataPath>
+							<DataPath>1/0:6a5ff168-a6a7-4447-a0bf-e8536c264bac</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ОкладКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="ОкладРасширеннаяПодсказка" id="18"/>
